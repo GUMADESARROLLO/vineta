@@ -1,0 +1,203 @@
+table.dataTable {
+  clear: both;
+  margin: 0.5em 0 !important;
+  max-width: none !important;
+  width: 100%;
+}
+table.dataTable td,
+table.dataTable th {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+table.dataTable td.dataTables_empty,
+table.dataTable th.dataTables_empty {
+  text-align: center;
+}
+table.dataTable.nowrap th, table.dataTable.nowrap td {
+  white-space: nowrap;
+}
+
+div.dataTables_wrapper {
+  position: relative;
+}
+div.dataTables_wrapper div.dataTables_length label {
+  float: left;
+  text-align: left;
+  margin-bottom: 0;
+  margin-left: 0px;
+}
+div.dataTables_wrapper div.dataTables_length select {
+  width: 100%;
+  margin-bottom: 0;
+}
+div.dataTables_wrapper div.dataTables_filter label {
+  float: right;
+  margin-bottom: 0;
+  margin-left: 0px;
+}
+div.dataTables_wrapper div.dataTables_filter input {
+  display: inline-block !important;
+  width: auto !important;
+  margin-bottom: 0;
+  margin-left: 0.5em;
+}
+div.dataTables_wrapper div.dataTables_info {
+  padding-top: 2px;
+}
+div.dataTables_wrapper div.dataTables_paginate {
+  float: right;
+  margin: 0;
+}
+div.dataTables_wrapper div.dataTables_processing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  margin-top: -26px;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+table.dataTable thead > tr > th.sorting_asc, table.dataTable thead > tr > th.sorting_desc, table.dataTable thead > tr > th.sorting,
+table.dataTable thead > tr > td.sorting_asc,
+table.dataTable thead > tr > td.sorting_desc,
+table.dataTable thead > tr > td.sorting {
+  padding-right: 1.5rem;
+  text-align: center;
+}
+table.dataTable thead > tr > th:active,
+table.dataTable thead > tr > td:active {
+  outline: none;
+}
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {
+  cursor: pointer;
+}
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+table.dataTable thead .sorting {
+  background-image: url("../images/sort_both.png");
+}
+table.dataTable thead .sorting_asc {
+  background-image: url("../images/sort_asc.png");
+}
+table.dataTable thead .sorting_desc {
+  background-image: url("../images/sort_desc.png");
+}
+table.dataTable thead .sorting_asc_disabled {
+  background-image: url("../images/sort_asc_disabled.png");
+}
+table.dataTable thead .sorting_desc_disabled {
+  background-image: url("../images/sort_desc_disabled.png");
+}
+
+div.dataTables_scrollHead table {
+  margin-bottom: 0 !important;
+}
+
+div.dataTables_scrollBody table {
+  border-top: none;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+div.dataTables_scrollBody table tbody tr:first-child th,
+div.dataTables_scrollBody table tbody tr:first-child td {
+  border-top: none;
+}
+
+div.dataTables_scrollFoot table {
+  margin-top: 0 !important;
+  border-top: none;
+}
+
+table {
+  background: #FFFFFF;
+  border: solid 1px #DDDDDD;
+  margin-bottom: 1.25rem;
+  table-layout: auto; }
+  table caption {
+    background: transparent;
+    color: #222222;
+    font-size: 1rem;
+    font-weight: bold; }
+  table thead {
+    background: #F5F5F5; }
+    table thead tr th,
+    table thead tr td {
+      color: #222222;
+      font-size: 0.875rem;
+      font-weight: bold;
+      padding: 0.5rem 0.625rem 0.625rem; }
+  table tfoot {
+    background: #F5F5F5; }
+    table tfoot tr th,
+    table tfoot tr td {
+      color: #222222;
+      font-size: 0.875rem;
+      font-weight: bold;
+      padding: 0.5rem 0.625rem 0.625rem; }
+  table tr th,
+  table tr td {
+    color: #222222;
+    font-size: 0.875rem;
+    padding: 0.5625rem 0.625rem;
+    text-align: left; }
+  table tr.even, table tr.alt, table tr:nth-of-type(even) {
+    background: #F9F9F9; }
+  table thead tr th,
+  table tfoot tr th,
+  table tfoot tr td,
+  table tbody tr th,
+  table tbody tr td,
+  table tr td {
+    display: table-cell;
+    line-height: 1.125rem; }
+
+  ul.pagination {
+    display: block;
+    margin-left: -0.3125rem;
+    min-height: 1.5rem; }
+  ul.pagination li {
+    color: #222222;
+    font-size: 0.875rem;
+    height: 1.5rem;
+    margin-left: 0.3125rem; }
+  ul.pagination li a, ul.pagination li button {
+    border-radius: 3px;
+    transition: background-color 300ms ease-out;
+    background: none;
+    color: #999999;
+    display: block;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: inherit;
+    padding: 0.0625rem 0.625rem 0.0625rem; }
+  ul.pagination li:hover a,
+  ul.pagination li a:focus, ul.pagination li:hover button,
+  ul.pagination li button:focus {
+    background: #e6e6e6; }
+  ul.pagination li.unavailable a, ul.pagination li.unavailable button {
+    cursor: default;
+    color: #999999; }
+  ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus, ul.pagination li.unavailable:hover button, ul.pagination li.unavailable button:focus {
+    background: transparent; }
+  ul.pagination li.current a, ul.pagination li.current button {
+    background: #008CBA;
+    color: #FFFFFF;
+    cursor: default;
+    font-weight: bold; }
+  ul.pagination li.current a:hover, ul.pagination li.current a:focus, ul.pagination li.current button:hover, ul.pagination li.current button:focus {
+    background: #008CBA; }
+  ul.pagination li {
+    display: block;
+    float: left; }
